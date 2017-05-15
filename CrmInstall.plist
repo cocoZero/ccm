@@ -33,7 +33,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.ucsmy.crmFordev</string>
+				<string>com.ucs.crmFordev</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>subtitle</key>
