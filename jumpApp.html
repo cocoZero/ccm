@@ -28,7 +28,7 @@
 
         // 判断手机上是否安装了app，如果安装直接打开url，如果没安装，执行callback
         function openApp(url,callback) {
-          location.href = url
+          window.location = url;
             let isIOS = detectVersion()
             if(isIOS){
                 var timeout, t = 4000, hasApp = true;  
@@ -66,5 +66,6 @@
 </head>
 <body>
 <button onclick="jump()">跳转设置限额页面</button>
+  <a href="gzcbmbank://gzcb.mobile.com?bizCode=T_C_1051.hsml&TransSeqNo=1&RegisterDate=2" >jump 跳转</a>
 </body>
 </html>
