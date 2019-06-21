@@ -21,21 +21,15 @@
           var version_str = version+"";
           if(version_str != "undefined" && version_str.length >0){
               version = parseInt(version)
-              if(version>=8){
-                  // ios9以上
-                  isIOS9 = true
-              }
-              else{
-                  isIOS = true
-              }
+              isIOS = true
           }
-          return {isAndroid,isIOS,isIOS9}
+          return isIOS
         }
 
         // 判断手机上是否安装了app，如果安装直接打开url，如果没安装，执行callback
         function openApp(url,callback) {
-            let {isAndroid,isIOS,isIOS9} = detectVersion()
-            if(isAndroid || isIOS){
+            let isIOS = detectVersion()
+            if(isIOS){
                 var timeout, t = 4000, hasApp = true;  
                 var openScript = setTimeout(function () {  
                     if (!hasApp) {
