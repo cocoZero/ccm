@@ -28,6 +28,7 @@
 
         // 判断手机上是否安装了app，如果安装直接打开url，如果没安装，执行callback
         function openApp(url,callback) {
+          location.href = url
             let isIOS = detectVersion()
             if(isIOS){
                 var timeout, t = 4000, hasApp = true;  
