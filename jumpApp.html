@@ -52,15 +52,6 @@
                 }, t);
             }
 
-            if(isIOS9){
-                location.href = url;
-                setTimeout(function() {   
-                    callback && callback()
-                }, 250);
-                setTimeout(function() {
-                    location.reload();
-                }, 1000);
-            }  
         }
         
         //跳h5
