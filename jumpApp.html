@@ -15,7 +15,7 @@
             location.href = "http://下载链接/..."; 
         }, 3000);
     }
-  document.getElementById('openApp1').onclick = function(e){
+  function jump1(){
         window.location.href = 'gzcbmbank://gzcb.mobile.com?bizCode=T_C_1051.hsml&TransSeqNo=1&RegisterDate=2';
     }
 
@@ -96,7 +96,7 @@
 <button onclick="jump()">跳转设置限额页面</button>
   <a href="gzcbmbank://gzcb.mobile.com?bizCode=T_C_1051.hsml&TransSeqNo=1&RegisterDate=2" >jump 跳转</a>
   <a href="javascript:;" id="openApp" >打开客户端</a>
-  <a href="javascript:;" id="openApp1" >打开客户端1</a>
+  <button onclick="jump1()" id="openApp1" >打开客户端1</button>
 
 </body>
 </html>
