@@ -87,6 +87,12 @@
 // 			window.location='https://www.baidu.com';//如果超时就跳转到app下载页
 // 		},500);
        }
+	function jump3(){
+        window.location.href = 'gzcbmbank://gzcb.mobile.com?bizCode=T_E_1004.hsml&TransSeqNo=1&RegisterDate=2';
+      }
+	function jump4(){
+        window.location.href = 'gzcbmbank://gzcb.mobile.com?bizCode=T_Q_1002.hsml&TransSeqNo=1&RegisterDate=2';
+      }
   
 </script>
 <style>
@@ -98,6 +104,8 @@
   <!--<a href="gzcbmbank://gzcb.mobile.com?bizCode=T_C_1051.hsml&TransSeqNo=1&RegisterDate=2" >jump 跳转</a>-->
   <button style="width:100%;height:120px;margin:10 5 10;font-size: 50px;" onclick="jump1()" id="openApp1" >跳转转账限额设置</button>
   <button style="width:100%;height:120px;margin:10 5 10;font-size: 50px;" onclick="jump2()" id="openApp1" >跳转理财产品</button>
+  <button style="width:100%;height:120px;margin:10 5 10;font-size: 50px;" onclick="jump3()" id="openApp1" >跳转活期转天天利</button>
+  <button style="width:100%;height:120px;margin:10 5 10;font-size: 50px;" onclick="jump4()" id="openApp1" >跳转存款利率查询</button>
 
 </body>
 </html>
